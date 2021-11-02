@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_button_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/recordedText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_to_translate"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/recordButton"
+        app:layout_constraintStart_toStartOf="@+id/recordButton"
+        app:layout_constraintTop_toBottomOf="@+id/recordButton" />
+
+    <TextView
+        android:id="@+id/translatedText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/translated_text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/recordedText"
+        app:layout_constraintStart_toStartOf="@+id/recordedText"
+        app:layout_constraintTop_toBottomOf="@+id/recordedText" />
+
+    <Button
+        android:id="@+id/translateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/translate_button_name"
+        app:layout_constraintEnd_toEndOf="@+id/translatedText"
+        app:layout_constraintStart_toStartOf="@+id/translatedText"
+        app:layout_constraintTop_toBottomOf="@+id/translatedText" />
+
+    <Button
+        android:id="@+id/saveToDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/save_button_name"
+        app:layout_constraintEnd_toEndOf="@+id/translateButton"
+        app:layout_constraintStart_toStartOf="@+id/translateButton"
+        app:layout_constraintTop_toBottomOf="@+id/translateButton" />
+
+    <Button
+        android:id="@+id/toTTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/next_page_button_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

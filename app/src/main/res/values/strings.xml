@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Translate App</string>
+    <string name="record_button_name">Record word/sentence</string>
+    <string name="record_prompt">Say something to translate</string>
+    <string name="record_error">That did not work!</string>
+    <string name="text_to_translate">Text to translate</string>
+    <string name="translated_text">Translated text</string>
+    <string name="translate_button_name">Translate Text</string>
+    <string name="save_button_name">Save to database</string>
+    <string name="to_tts_button">next page</string>
+    <string name="to_main_button">back</string>
+    <string name="speak_button_name">Speak a random row from DB</string>
+    <string name="next_page_button_name">next page</string>
+</resources>
